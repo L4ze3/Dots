@@ -3,8 +3,9 @@ export PATH=$HOME/bin:/bin:/sbin:/sbin/bin:/usr/local/bin:$HOME/.local/bin/:$PAT
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
-ZSH_THEME="intheloop"
-
+#ZSH_THEME="terminalparty"
+PROMPT='%{$fg_bold[cyan]%}> %{$reset_color%}'
+RPROMPT='%{$fg[blue]%}%3~%{$reset_color%}'
 # auto-correction.
 ENABLE_CORRECTION="true"
 
@@ -44,6 +45,7 @@ alias vim="nvim"
 alias nv="nvim"
 alias q="exit"
 alias :q="exit"
+alias 2023='echo "YEAR OF THE DESKTOP"'
 
 # functions
 mkcd() { mkdir $1 && cd $1 }
