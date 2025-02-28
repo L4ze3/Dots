@@ -1,11 +1,12 @@
-export PATH=$HOME/bin:/bin:/sbin:/sbin/bin:/usr/local/bin:$HOME/.local/bin/:$PATH
+export PATH=$HOME/bin:/bin:/sbin:/sbin/bin:/usr/local/bin:$HOME/.local/bin/:$HOME/.local/share:$PATH
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
-#ZSH_THEME="terminalparty"
-PROMPT='%{$fg_bold[cyan]%}> %{$reset_color%}'
-RPROMPT='%{$fg[blue]%}%3~%{$reset_color%}'
+#ZSH_THEME="itchy"
+#
+PROMPT='%{$fg_bold[purple]%}> %{$reset_color%}'
+#RPROMPT='%{$fg[blue]%}%3~%{$reset_color%}'
 # auto-correction.
 ENABLE_CORRECTION="true"
 
@@ -41,15 +42,12 @@ bindkey -M menuselect 'j' vi-down-line-or-history
 bindkey -v '^?' backward-delete-char
 
 # aliases
-alias vim="nvim"
-alias nv="nvim"
+alias quit="exit"
 alias q="exit"
 alias :q="exit"
-alias 2023='echo "YEAR OF THE DESKTOP"'
+alias sl="ls | rev"
+alias vim="nvim"
 
 # functions
 mkcd() { mkdir $1 && cd $1 }
-
-# shell autostart
-neofetch 
 
